@@ -45,6 +45,7 @@ async def main():
         await state.finish()
         await message.reply_dice()
 
+
     dp.register_message_handler(d3, commands="d3", state='*')
     dp.register_message_handler(d4, commands="d4", state='*')
     dp.register_message_handler(d5, commands="d5", state='*')
