@@ -29,21 +29,21 @@ async def main():
     async def d3(message: types.Message, state: FSMContext):
         await state.finish()
         result = random.randint(1, 3)
-        await message.reply(str(result))
+        await message.answer(str(result))
 
     async def d4(message: types.Message, state: FSMContext):
         await state.finish()
         result = random.randint(1, 4)
-        await message.reply(str(result))
+        await message.answer(str(result))
 
     async def d5(message: types.Message, state: FSMContext):
         await state.finish()
         result = random.randint(1, 5)
-        await message.reply(str(result))
+        await message.answer(str(result))
 
     async def d6(message: types.Message, state: FSMContext):
         await state.finish()
-        await message.reply_dice()
+        await message.answer_dice()
 
 
     dp.register_message_handler(d3, commands="d3", state='*')
